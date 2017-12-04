@@ -1,6 +1,6 @@
 <template>
-  <div class="danmu">
-      <input name="danmuInput" type="input" placeholder="弹幕发射" v-model="text" >
+  <div class="danmu-menu">
+      <input name="danmuInput" type="input" placeholder="弹幕发射" v-model="text" @keydown.enter="sendDanMu" >
       <input name="danmuSubmit" type="button" value="Dan一哈" @click="sendDanMu" >
   </div>
 </template>
@@ -17,6 +17,7 @@ return{
       sendDanMu:function(){
           
             bus.$emit('sendDanMu', this.text);   
+            this.text="";
       }
   },
   watch:{
@@ -25,24 +26,20 @@ return{
 }
 </script>
 <style scoped>
-.danmu{
+.danmu-menu{
     margin-top: 30px;
-    height: 200px;
-    widows: 100%;
+    
+    width: 100%;
 
 }
-.danmu input[name="danmuSubmit"]{
+.danmu-menu input[name="danmuSubmit"]{
     
     background: #bddf87;
     border-radius: 5px;
-    font-size: 18px;
+    
     margin: 5px 0;
     
 }
-.danmu  input[name="danmuInput"]{
-    
-  font-size: 20px;
-    
-}
+
 </style>
 

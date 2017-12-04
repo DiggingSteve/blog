@@ -51,9 +51,8 @@ input{outline: none;}
 input[type="button"]{border:0;}
 p,div{box-sizing: border-box;padding: 0;margin: 0;}
 ul{list-style: none}
-html{font-size: 10px;    font-family: arial, "Hiragino Sans GB", "Microsoft Yahei",  Tahoma, Helvetica, STHeiti;
-    -webkit-font-smoothing: antialiased;}
-body{display:block;position:absolute;left:0px;top:0px;width:100%;height:100%;overflow:hidden;color: #fff;text-align: center;vertical-align: middle;}
+html{font-size: 10px;    }
+body{display:block;position:absolute;left:0px;top:0px;width:100%;height:100%;overflow:hidden;color: #fff;text-align: center;}
 #container {
   position: relative;
   top: 0;

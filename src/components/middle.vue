@@ -21,7 +21,7 @@
 </template>
 <script>
 import animate from "animate.css";
-import danmu from './danmu';
+import danmu from './danmu-menu';
 export default {
   name: "middle",
   components:{danmu}
@@ -45,7 +45,7 @@ export default {
 }
 
 .card {
-  width: 70%;
+  width: 85%;
   
   margin: auto;
   position: absolute;
@@ -54,7 +54,7 @@ export default {
   -webkit-transform: translate(-50%, 0);
   -ms-transform: translate(-50%, 0);
   transform: translate(-50%, 0);
-  background-color: #fff;
+  background-color: rgba(27,27,27,.6);
   border-radius: 5px;
   animation: egg 4s ;
   -moz-animation: egg 4s; /* Firefox */
@@ -77,7 +77,7 @@ export default {
 68%  {width: 50px;height: 50px;background: #ed2c0d;border-radius: 50%;transform:translate(0,55px) }
 72%  {width: 50px;height: 50px;background: #ed2c0d;border-radius: 50%;transform:translate(0,-5px) }
 76%  {width: 50px;height: 50px;background: #ed2c0d;border-radius: 50%;transform:translate(0,300px) }
-100% {background: #fff;}
+100% {background:rgba(27,27,27,.6);}
 }
 
 @keyframes logoEgg {
@@ -86,7 +86,7 @@ export default {
   100%{opacity: 1}
 }
 
-@keyframes roate {
+@keyframes rotate {
   0%{transform: rotate(0)}
   50%{ transform: rotate(180deg)}
   100%{transform: rotate(360deg)}
@@ -100,7 +100,7 @@ export default {
 }
 .about-me p {
   padding:5px 0;
-  box-shadow: 0px 1px 1px #000;
+  box-shadow: 0px 0px 0px #000;
   margin-bottom: 10px;
   background-color: #dedede;
 }
@@ -114,7 +114,7 @@ export default {
   width: 8rem;
   height: 8rem;
   box-shadow: #000 0px 0px 8px;
-  animation:  4s ease forwards logoEgg ,2s 4s cubic-bezier(0.2, 0.2, 0.5, 0.5)  infinite roate
+  animation:  4s ease forwards logoEgg ,2s 4s cubic-bezier(0.2, 0.2, 0.5, 0.5)   rotate
   
   
 }
