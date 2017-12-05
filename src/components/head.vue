@@ -15,7 +15,7 @@ export default {
   data: function() {
     return {
       showFlag: false,
-      headMenu:[{router:"danmu",name:"弹幕"},{router:"about",name:"别点没做"}],
+      headMenu:[{router:"danmu",name:"弹幕"},{router:"about",name:"未定..."}],
       isActive:true
     };
   },

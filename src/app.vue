@@ -34,10 +34,10 @@ export default {
     setTimeout(() => {
       this.loadFlag=false;
       this.headFlag=true;
-    }, 1000);
+    }, 2000);
     setTimeout(() => {
       this.middleFlag=true;
-    }, 3000);
+    }, 4000);
   }
 
 };
@@ -45,7 +45,7 @@ export default {
 
 <style>
 
-a{text-decoration:none !important;}
+a{text-decoration:none !important;color: #fff;}
 a:visited{color: #fff;text-decoration: none;}
 input{outline: none;}
 input[type="button"]{border:0;}

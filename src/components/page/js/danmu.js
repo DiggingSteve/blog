@@ -1,9 +1,9 @@
 
 class danmu{
-    constructor(con,text,direction){
+    constructor(con,text,duration){
         this.con=document.getElementById(con);
         this.text=text;
-        this.direction=direction;
+        this.duration=duration;
         this.createDanmu();
     }
     createDanmu(){
@@ -20,7 +20,7 @@ class danmu{
         setTimeout(() => {
             danmu.remove();
             danmu=null;
-        }, this.direction);
+        }, this.duration);
     }
     randomTop(){
         let height=parseInt(((Math.random()*100)/2))*5;
