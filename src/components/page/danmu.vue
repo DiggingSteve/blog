@@ -2,7 +2,7 @@
   <div class="middle-con" id="danmu-wrap">
     <div>online member: {{onlineCount}}</div>
     </div>
-  </div>
+ 
 </template>
 <script>
 import bus from "../bus/danmubus";
